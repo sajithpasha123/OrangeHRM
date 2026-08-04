@@ -1,11 +1,14 @@
 ﻿using OrangeHRM.PageObjects;
 using OrangeHRM.Utilities;
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace OrangeHRM.Base
 {
+    [AllureNUnit]
     public class BaseTest
     {
         protected HomePage HomePage;

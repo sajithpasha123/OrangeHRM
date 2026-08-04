@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/allure-framework/allure-csharp/2.15.0/src/Allure.Net.Commons/Schemas/allureConfig.schema.json",
+  "allure": {
+    "directory": "allure-results",
+    "title": "OrangeHRM Automation Report",
+    "links": []
+  }
+}
