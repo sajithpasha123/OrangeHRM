@@ -14,11 +14,11 @@ namespace OrangeHRM.Tests
         public void Login()
         {
             User currentUser = UserManager.GetCurrentUser();
+            var homePage = new HomePage();
 
-            LoginPage loginPage = new LoginPage(DriverManager.Driver);
+            var loginPage = homePage.Login(currentUser);
 
-            // Step 1: Login to OrangeHRM
-            loginPage.Login(currentUser);
         }
+
     }
 }

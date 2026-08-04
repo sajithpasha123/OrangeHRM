@@ -15,11 +15,11 @@ namespace OrangeHRM.Utilities
 
         private static readonly User admin = new User
         {
-            UserName = "admin@gmail.com",
-            Password = "password2"
+            UserName = "Admin",
+            Password = "admin123"
         };
 
-        public static string CurrentUser { get; set; } = "User";
+        public static string CurrentUser { get; set; } = "Admin";
 
         public static User GetCurrentUser()
         {

@@ -11,8 +11,8 @@ namespace OrangeHRM.PageObjects
 {
     public class LoginPage : BasePage
     {
-        private readonly By txtUsername = By.Name("username");
-        private readonly By txtPassword = By.Name("password");
+        private readonly By txtUsername = By.XPath("//input[@placeholder='Username']");
+        private readonly By txtPassword = By.XPath("//input[@placeholder='Password']");
         private readonly By btnLogin = By.XPath("//button[@type='submit']");
 
         public LoginPage(IWebDriver driver) : base(driver)
@@ -26,6 +26,7 @@ namespace OrangeHRM.PageObjects
             EnterText(txtPassword, user.Password);
             Click(btnLogin);
         }
+
 
     }
 }
